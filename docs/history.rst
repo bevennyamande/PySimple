@@ -1,1 +1,1 @@
-.. include:: ../ChangeLog
+.. include:: ../HISTORY.rst
