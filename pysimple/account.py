@@ -20,7 +20,7 @@
 import requests
 from lxml import html
 
-import exceptions
+from pysimple import exceptions
 
 API = 'https://bank.simple.com'
 
