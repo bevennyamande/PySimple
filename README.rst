@@ -13,3 +13,11 @@ PySimple
 
 
 A client library and reference implementation for Simple's online banking site.
+
+* Free software: GPLv3
+* Documentation: https://pysimple.readthedocs.org
+
+Features
+--------
+
+* Basic account balance and goal support
