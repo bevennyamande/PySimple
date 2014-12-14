@@ -2,14 +2,14 @@
 PySimple
 =============================
 
-.. image:: https://badge.fury.io/py/pysimple.png
-    :target: http://badge.fury.io/py/pysimple
+.. image:: https://badge.fury.io/py/PySimple.png
+    :target: http://badge.fury.io/py/PySimple
 
 .. image:: https://travis-ci.org/TFenby/PySimple.svg?branch=master
-    :target: https://travis-ci.org/TFenby/pysimple
+    :target: https://travis-ci.org/TFenby/PySimple
 
-.. image:: https://pypip.in/status/pysimple/badge.svg
-    :target: https://pypi.python.org/pypi/pysimple
+.. image:: https://pypip.in/status/PySimple/badge.svg
+    :target: https://pypi.python.org/pypi/PySimple
 
 
 A client library and reference implementation for Simple's online banking site.
