@@ -32,4 +32,4 @@ If you have any suggestions or questions about **PySimple** feel free to email m
 at tylerfenby@gmail.com.
 
 If you encounter any errors or problems with **PySimple**, please let me know!
-Open an Issue at the GitHub http://github.com/TFenby/pysimple main repository.
+Open an Issue at the GitHub https://github.com/TFenby/pysimple main repository.
