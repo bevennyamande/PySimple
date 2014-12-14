@@ -12,7 +12,7 @@ PySimple
     :target: https://pypi.python.org/pypi/PySimple
 
 
-A client library and reference implementation for Simple's online banking site.
+A client library for Simple's online banking site.
 
 * Free software: GPLv3
 * Documentation: https://pysimple.readthedocs.org
