@@ -114,7 +114,7 @@ class Account(object):
                                   data={
                                       'from_goal_id': from_id,
                                       'to_goal_id': to_id,
-                                      'amount': self.dollars_to_amount(amount),
+                                      'amount': self.dollars_to_mills(amount),
                                       '_csrf': self._csrf,
                                   })
         resp.raise_for_status()
@@ -131,7 +131,7 @@ class Account(object):
         """
         resp = self._session.post(API + '/goals/%s/transactions' % to_id,
                                   data={
-                                      'amount': self.dollars_to_amount(amount),
+                                      'amount': self.dollars_to_mills(amount),
                                       '_csrf': self._csrf,
                                   })
         resp.raise_for_status()
