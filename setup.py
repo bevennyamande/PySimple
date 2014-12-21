@@ -35,6 +35,7 @@ setup(
         'wheel',
         'requests',
         'lxml',
+        'click',
     ],
     tests_require=[],
     setup_requires=[],
