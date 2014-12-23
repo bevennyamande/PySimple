@@ -2,7 +2,7 @@
 
 from setuptools import setup
 
-from pysimple import version
+from pysimple import _metadata
 
 
 readme = open('README.rst').read()
@@ -16,7 +16,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='pysimple',
-    version=version.__version__,
+    version=_metadata.__version__,
     description='Python library for Simple online bank',
     long_description=readme + '\n\n' + doclink + '\n\n' + history,
     author='Tyler Fenby',
