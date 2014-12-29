@@ -16,7 +16,6 @@ dist
 build
 eggs
 parts
-bin
 var
 sdist
 develop-eggs
@@ -46,3 +45,5 @@ output/*/index.html
 
 # Sphinx
 docs/_build
+
+.ropeproject

@@ -9,7 +9,7 @@ PySimple
     :target: https://travis-ci.org/TFenby/PySimple
 
 .. image:: https://pypip.in/status/PySimple/badge.svg
-    :target: https://pypi.python.org/pypi/PySimple
+    :target: https://pypi.python.org/pypi/pysimple
 
 
 A client library for Simple's online banking site.
