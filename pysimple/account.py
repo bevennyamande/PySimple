@@ -20,7 +20,8 @@
 import requests
 from lxml import html
 
-from pysimple import exceptions
+from pysimple import exceptions, util
+
 
 API = 'https://bank.simple.com'
 
@@ -59,27 +60,6 @@ class Account(object):
         if postresp.url != 'https://bank.simple.com/activity':
             raise exceptions.LoginError
 
-    @staticmethod
-    def dollars_to_mills(dollars):
-        """Convert dollars to mills, which Simple uses
-
-        :param dollars: Amount to convert
-        :type dollars: int, float
-        :returns: Input amount, in mills
-        :rtype: int
-        """
-        return int(dollars * 10000)
-
-    @staticmethod
-    def mills_to_dollars(mills):
-        """Convert mills back to dollars
-
-        :param int mills: Amount to convert
-        :returns: Input amount, in mills
-        :rtype: float
-        """
-        return mills / 10000.0
-
     def all_goals(self):
         """Returns all (active and archived) goals, raw from the API
         """
@@ -114,7 +94,7 @@ class Account(object):
                                   data={
                                       'from_goal_id': from_id,
                                       'to_goal_id': to_id,
-                                      'amount': self.dollars_to_mills(amount),
+                                      'amount': util.dollars_to_mills(amount),
                                       '_csrf': self._csrf,
                                   })
         resp.raise_for_status()
@@ -131,7 +111,7 @@ class Account(object):
         """
         resp = self._session.post(API + '/goals/%s/transactions' % to_id,
                                   data={
-                                      'amount': self.dollars_to_mills(amount),
+                                      'amount': util.dollars_to_mills(amount),
                                       '_csrf': self._csrf,
                                   })
         resp.raise_for_status()
