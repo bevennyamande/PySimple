@@ -24,21 +24,6 @@ clean-pyc:
 	find . -name '*.pyo' -exec rm -f {} +
 	find . -name '*~' -exec rm -f {} +
 
-lint:
-	flake8 pysimple test
-
-test:
-	py.test
-
-test-all:
-	tox
-
-coverage:
-	coverage run --source pysimple setup.py test
-	coverage report -m
-	coverage html
-	#open htmlcov/index.html
-
 docs:
 	rm -f docs/pysimple.rst
 	rm -f docs/modules.rst

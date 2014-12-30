@@ -25,7 +25,8 @@ def real_account():
                            config.get('Credentials', 'password'))
 
 
-@pytest.mark.skipif(not os.path.isfile('test/login.ini'), reason='Need login to test Simple API')
+@pytest.mark.skipif(not os.path.isfile('test/login.ini'),
+                    reason='Need login to test Simple API')
 class TestAPI(object):
     """
     The only thing we're really testing is if their API has changed,
